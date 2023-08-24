@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />  
+</head>
+  <body>
+    <section class="cartBox row"></section>
+    <h2>장바구니</h2>
+    <div class="cartInfo">
+        <ul class="individual-info">
+            <li>
+                    <img src="" alt="">
+                    <div class="prdinfo">
+                        <span>name</apan>
+                        <p>lineup</p>
+                        <p>size</p>
+                        <p>price</p>
+                    </div>
+                <div class="option">
+                    <select name="size" class="size-select">
+                        <option value=""></option>
+                        <option value="">size[0]</option>
+                        <option value="">size[1]</option>
+                        <option value="">50ml</option>
+                    </select>
+                     <div class="quantity-select">
+                        <button type="button" class="qty__minus">-</button>
+                        <input type="text" value="${value.quantity}" autocomplete="off" class="qty__input">
+                        <button type="button" class="qty__plus">+</button>
+                     </div>
+                </div>
+                <p>price*quantity</p>
+            </li>
+        </ul>
+        <div class="total-info">
+            <ul>
+                <li class="subtotal">
+                    <p>소계</p>
+                    <p>price*quantity</p>
+                    <p>VAT포함</p>
+                </li>
+                <li class="delivery-charge">
+                    <p>배송비</p>
+                    <p>price</p>
+                </li>
+                <li class="package">
+                    <p>선물 포장</p>
+                    <p>3000</p>
+                </li>
+                <li class="total">
+                    <p>총액</p>
+                    <p>price</p>
+                    <p>VAT포함</p>
+                </li>
+            </ul>
+        </div>
+        <button type="button" onclick="location.href='./buy.html' ">결제 계속하기</button>
+        <button type="button"onclick="location.href='./index.html' "> 쇼핑 계속하기</button>
+    </div>
+  </body>
+</html>
