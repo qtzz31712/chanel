@@ -1,64 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css" />  
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+  />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+    integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 </head>
-  <body>
-    <section class="cartBox row"></section>
-    <h2>장바구니</h2>
-    <div class="cartInfo">
-        <ul class="individual-info">
-            <li>
-                    <img src="" alt="">
-                    <div class="prdinfo">
-                        <span>name</apan>
-                        <p>lineup</p>
-                        <p>size</p>
-                        <p>price</p>
-                    </div>
-                <div class="option">
-                    <select name="size" class="size-select">
-                        <option value=""></option>
-                        <option value="">size[0]</option>
-                        <option value="">size[1]</option>
-                        <option value="">50ml</option>
-                    </select>
-                     <div class="quantity-select">
-                        <button type="button" class="qty__minus">-</button>
-                        <input type="text" value="${value.quantity}" autocomplete="off" class="qty__input">
-                        <button type="button" class="qty__plus">+</button>
-                     </div>
-                </div>
-                <p>price*quantity</p>
-            </li>
-        </ul>
-        <div class="total-info">
-            <ul>
-                <li class="subtotal">
-                    <p>소계</p>
-                    <p>price*quantity</p>
-                    <p>VAT포함</p>
-                </li>
-                <li class="delivery-charge">
-                    <p>배송비</p>
-                    <p>price</p>
-                </li>
-                <li class="package">
-                    <p>선물 포장</p>
-                    <p>3000</p>
-                </li>
-                <li class="total">
-                    <p>총액</p>
-                    <p>price</p>
-                    <p>VAT포함</p>
-                </li>
-            </ul>
-        </div>
-        <a href="./buy.html" class="to-buy">결제 계속하기</a>
-        <a href="./index.html" class="to-index">쇼핑 계속하기</a>
-    </div>
-  </body>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="footer"></div>
+    <script src="./js/common.js"></script>
+    <script src="./js/detail.js"></script>
+</body>
 </html>

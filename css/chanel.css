@@ -43,7 +43,7 @@
   text-decoration: underline;
 }
 
-#headbanner .wrap > .titlebox {
+#headbanner .wrap>.titlebox {
   position: absolute;
   text-align: center;
   top: 40%;
@@ -215,18 +215,18 @@ h2 {
   padding-top: 20px;
 }
 
-#category > ul {
+#category>ul {
   display: flex;
   justify-content: space-between;
 }
 
-#category > ul > li {
+#category>ul>li {
   width: 32%;
   height: 450px;
 }
 
-#category > ul > li:hover .list ul li:nth-child(2) {
-  border-bottom: 1px solid #000;
+#category>ul>li:hover .list ul li:nth-child(2) {
+  border-bottom: 3px solid #000;
 }
 
 #category .list ul li:nth-child(2) {
@@ -266,4 +266,6 @@ h2 {
 
 #ex .extra .content li:nth-child(3):hover {
   border-bottom: none;
-}/*# sourceMappingURL=chanel.css.map */
+}
+
+/*# sourceMappingURL=chanel.css.map */

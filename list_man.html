@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>list_man</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/list.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
       integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
@@ -13,7 +21,9 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
+
   <body>
+    <div class="header"></div>
     <div class="banner">
       <h2>남성 향수</h2>
       <p>
@@ -25,52 +35,50 @@
     </div>
 
     <div class="list">
-      <!-- <ul>
-        <li>
-          <ul>
-            <li>
-              <img
-                src="./source/detail/bluedechanel_eau_de_parfum.jpg"
-                alt=""
-              />
-            </li>
-            <li>name</li>
-            <li>lineup</li>
-            <li>price + 원 부터</li>
-            <li>장바구니에추가</li>
-          </ul>
-        </li>
+      <ul>
+        <li><img src="./source/index/." alt="" /></li>
       </ul>
-    </div> -->
-    <div class="banner row">
-      <div>
-        <h3></h3>
-        <p></p>
-        <span></span>
-      </div>
+      <!--     <ul>
+      <li>
+        <ul>
+          <li>
+            <img src="./source/detail/bluedechanel_eau_de_parfum.jpg" alt="" />
+          </li>
+          <li>name</li>
+          <li>lineup</li>
+          <li>price + 원 부터</li>
+          <li>장바구니에추가</li>
+        </ul>
+      </li>
+    </ul> -->
+
+    <!--  <div class="banner row">
+    <div>
+      <h3></h3>
+      <p></p>
+      <span></span>
     </div>
-    <div id="ex" class="row">
-      <div class="extra">
-        <a href="#">
-          <ul class="content">
-            <li>
-              <img src="./source/index/onemineur_800x1300.jpg" alt="" />
-            </li>
-            <li>특별한 디테일</li>
-            <li>자세히 보기</li>
-          </ul>
-        </a>
-        <a href="#">
-          <ul class="content">
-            <li>
-              <img src="./source/index/specialeditions_800x1300.jpg" alt="" />
-            </li>
-            <li>스페셜 에디션</li>
-            <li>자세히 보기</li>
-          </ul>
-        </a>
-      </div>
-    </div>
-    <script src="./js/prdlist.js"></script>
+  </div> -->
+
+
+    <script src="./js/common.js"></script>
+    <div class="footer"></div>
   </body>
+  <script>
+    let data = "";
+    $.ajax({
+      type: "GET",
+      url: "../js/data.json",
+      dataType: "json",
+      success: function (rdata) {
+        // console.log(rdata);
+        data = rdata.man;
+        usedata("블루 드 샤넬");
+      },
+      error: function (xhr) {
+        alert(xhr.status + "/" + xhr.errorText);
+      },
+    });
+  </script>
+  <script src="./js/list.js"></script>
 </html>

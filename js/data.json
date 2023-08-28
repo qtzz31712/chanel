@@ -4,7 +4,7 @@
       "name": "블루 드 샤넬",
       "lineup": "빠르펭",
       "refer": "107180",
-      "price": ["220000", "158000"],
+      "price": [220000, 158000],
       "size": ["100ml", "50ml"],
       "image": "bluedechanel_parfum.jpg"
     },
@@ -12,7 +12,7 @@
       "name": "블루 드 샤넬",
       "lineup": "오 드 빠르펭",
       "refer": "107360",
-      "price": ["188000", "135000"],
+      "price": [188000, 135000],
       "size": ["100ml", "50ml"],
       "image": "bluedechanel_eau_de_parfum.jpg"
     },
@@ -20,7 +20,7 @@
       "name": "블루 드 샤넬",
       "lineup": "빠르펭 트위스트 앤 스프레이",
       "refer": "107120",
-      "price": ["186000", "158000"],
+      "price": [186000, 158000],
       "size": ["3x20ml", "3x20ml리필"],
       "image": "bluedechanel_parfum_twist_and_spray.jpg"
     },
@@ -28,7 +28,7 @@
       "name": "블루 드 샤넬",
       "lineup": "오 드 빠르펭 트위스트 앤 스프레이",
       "refer": "107300",
-      "price": ["161000", "135000"],
+      "price": [161000, 135000],
       "size": ["3x20ml", "3x20ml리필"],
       "image": "bluedechanel_eau_de_parfum_twist_and_spray.jpg"
     },
@@ -36,7 +36,7 @@
       "name": "블루 드 샤넬",
       "lineup": "오 드 뚜왈렛",
       "refer": "107460",
-      "price": ["163000원", "120000"],
+      "price": [163000, 120000],
       "size": ["100ml", "50ml"],
       "image": "bluedechanel_eau_de_toilette.jpg"
     },
@@ -44,7 +44,7 @@
       "name": "블루 드 샤넬",
       "lineup": "오 드 뚜왈렛 트위스트 앤 스프레이",
       "refer": "107800",
-      "price": ["142000", "121000"],
+      "price": [142000, 121000],
       "size": ["3x20ml", "3x20ml리필"],
       "image": "bluedechanel_eau_de_toilette_twist_and_spray.jpg"
     },
@@ -52,16 +52,25 @@
       "name": "블루 드 샤넬",
       "lineup": "에프터 쉐이브 로션",
       "refer": "107070",
-      "price": "85000원",
-      "size": "100ml",
+      "price": [85000],
+      "size": ["100ml"],
       "image": "bluedechanel_after_shave_lotion.jpg"
     },
     {
       "name": "블루 드 샤넬",
       "lineup": "데오드란트 스프레이",
       "refer": "107930",
-      "price": "51000",
-      "size": "100ml",
+      "price": [51000],
+      "size": ["100ml"],
+      "image": "bluedechanel_deodrant.jpg"
+    },
+
+    {
+      "name": "향수",
+      "lineup": "데오드란트 스프레이",
+      "refer": "107930",
+      "price": [51000],
+      "size": ["100ml"],
       "image": "bluedechanel_deodrant.jpg"
     }
   ],
@@ -70,9 +79,9 @@
       "name": "코코 마드모아젤",
       "lineup": "헤어미스트",
       "refer": "116997",
-      "price": "79000",
-      "size": "135ml",
-      "image": "cocoMademoiselle_hair_mist.jpg"
+      "price": [79000],
+      "size": ["135ml"],
+      "image": "cocomadmoiselle_hair_mist.jpg"
     },
     {
       "name": "코코 마드모아젤",
@@ -80,13 +89,13 @@
       "refer": "116630",
       "price": ["126000", "179000", "255000"],
       "size": ["35ml", "50ml", "100ml"],
-      "image": "cocoMademoiselle_eau_de_parfum_entance.jpg"
+      "image": "cocomadmoiselle_eau_de_parfum_entancejpg"
     },
     {
       "name": "코코 마드모아젤",
       "lineup": "오 드 빠르펭",
       "refer": "116520",
-      "price": ["255000", "179000", "126000"],
+      "price": [255000, 179000, 126000],
       "size": ["100ml", "50ml", "35ml"],
       "image": "cocoMademoiselle_eau_de_parfum.jpg"
     },
@@ -94,7 +103,7 @@
       "name": "코코 마드모아젤",
       "lineup": "로 프리베 - 밤을 위한 향수",
       "refer": "116260",
-      "price": ["204000", "146000"],
+      "price": [204000, 146000],
       "size": ["100ml", "50ml"],
       "image": "cocoMademoiselle_l`eau_privee.jpg"
     },
@@ -102,7 +111,7 @@
       "name": "코코 마드모아젤",
       "lineup": "오 드 빠르펭 트위스트 앤 스프레이",
       "refer": "116400",
-      "price": ["213000", "179000"],
+      "price": [213000, 179000],
       "size": ["3x20ml", "3x20ml리필"],
       "image": "cocoMademoiselle_eau_de_parfum_twist_and_spray.jpg"
     },
@@ -110,7 +119,7 @@
       "name": "코코 마드모아젤",
       "lineup": "오 드 뚜왈렛 트위스트 앤 스프레이",
       "refer": "116030",
-      "price": ["174000", "146000"],
+      "price": [174000, 146000],
       "size": ["3x20ml", "3x20ml리필"],
       "image": "cocoMademoiselle_eau_de_toilette_twist_and_spray.jpg"
     },
@@ -118,7 +127,7 @@
       "name": "코코 마드모아젤",
       "lineup": "오 드 뚜왈렛",
       "refer": "116460",
-      "price": ["204000", "146000"],
+      "price": [204000, 146000],
       "size": ["100ml", "50ml"],
       "image": "cocoMademoiselle_eau_de_toilette.jpg"
     },
@@ -126,7 +135,7 @@
       "name": "코코 마드모아젤",
       "lineup": "바디 솝",
       "refer": "116910",
-      "price": ["43000"],
+      "price": [43000],
       "size": ["150g"],
       "image": "cocoMademoiselle_body_soap.jpg"
     },
@@ -134,7 +143,7 @@
       "name": "코코 마드모아젤",
       "lineup": "바디 로션",
       "refer": "116945",
-      "price": ["87000"],
+      "price": [87000],
       "size": ["200ml"],
       "image": "cocoMademoiselle_body_lotion.jpg"
     }

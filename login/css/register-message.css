@@ -1,0 +1,87 @@
+.customer__textbox .customer__text .register__message p:nth-child(1) {
+  line-height: 1.5em;
+}
+
+.customer__textbox .customer__text .register__message p:nth-child(3) {
+  margin: 0;
+  font-size: 5px;
+  color: rgb(151, 151, 151);
+  padding: 5px;
+  padding-left: 20px;
+  top: 5px;
+}
+
+.customer__textbox .customer__text .register__message form .customer__phone {
+  display: inline-block;
+}
+
+.customer__textbox
+  .customer__text
+  .register__message
+  form
+  .customer__phone
+  #country__code {
+  padding: 0;
+  padding-left: 20px;
+  font-size: 7px;
+  color: darkgray;
+}
+
+.customer__textbox
+  .customer__text
+  .register__message
+  form
+  .customer__phone
+  #country__phone {
+  padding: 0;
+  margin-top: 14px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.customer__textbox .customer__text .register__message form #input__window {
+  font-size: 15px;
+  margin-left: 100px;
+  width: 260px;
+  border: none;
+  padding: 8px 3px;
+  outline: none;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.customer__textbox
+  .customer__text
+  .register__message
+  form
+  #input__window:hover {
+  border-bottom: 2px solid black;
+}
+
+.customer__textbox .customer__text .register__message form #submit__button {
+  display: block;
+  width: 408px;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.customer__textbox
+  .customer__text
+  .register__message
+  form
+  #submit__button:hover::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}

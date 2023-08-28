@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list_man</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="banner">
+        <h2>여성 향수</h2>
+        <p>
+            가브리엘 샤넬의 삶은 운명적인 만남으로 더욱 풍성해졌습니다. 샤넬은
+            운명적인 만남에서 영감을 받아 풍부한 상상력과 과감한 매력이 공존하는
+            샤넬 남성 향수를 선보입니다. 남성 향수의 향기를 품은 바스 & 바디, 쉐이빙
+            제품도 만나볼 수 있습니다.
+        </p>
+
+    </div>
+
+    <div class="list">
+        <!-- <ul>
+            <li>
+                <ul>
+                    <li>
+                        <img src="./source/detail/bluedechanel_eau_de_parfum.jpg" alt="" />
+                    </li>
+                    <li>name</li>
+                    <li>lineup</li>
+                    <li>price + 원 부터</li>
+                    <li>장바구니에추가</li>
+                </ul>
+            </li>
+        </ul> -->
+    </div>
+    <!--  <div class="banner row">
+    <div>
+      <h3></h3>
+      <p></p>
+      <span></span>
+    </div>
+  </div> -->
+
+    <div class="footer"></div>
+    <script src="./js/common.js"></script>
+</body>
+<script>
+    let data = '';
+    $.ajax({
+        type: 'GET',
+        url: '../js/data.json',
+        dataType: 'json',
+        success: function (rdata) {
+            console.log(rdata)
+            data = rdata.woman
+            usedata("코코 마드모아젤")
+        },
+        error: function (xhr) {
+            alert(xhr.status + "/" + xhr.errorText)
+        }
+    })
+</script>
+<script src="./js/list.js"></script>
+
+
+</html>

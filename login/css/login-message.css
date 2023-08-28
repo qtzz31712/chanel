@@ -1,0 +1,88 @@
+.customer__textbox .customer__text .welcome__page p {
+  text-align: center;
+}
+
+.customer__textbox .customer__text .welcome__page p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.customer__textbox .customer__text .welcome__page p:nth-child(2) {
+  font-size: 13px;
+  color: cadetblue;
+}
+
+.customer__textbox .customer__text form .input__window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer__textbox .customer__text form .input__window .log {
+  width: 250px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.customer__textbox .customer__text form .input__window input {
+  font-size: 15px;
+  width: 400px;
+  border: none;
+  padding: 8px 3px;
+  outline: none;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.customer__textbox .customer__text form .input__window #input__email {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer__textbox .customer__text form .input__window #input__password {
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer__textbox .customer__text form #input__email:hover {
+  border-bottom: 2px solid black;
+}
+
+.customer__textbox .customer__text form #input__password:hover {
+  border-bottom: 2px solid black;
+}
+
+.customer__textbox .customer__text form a {
+  margin-top: 20px;
+  display: block;
+  font-size: 13px;
+  cursor: pointer;
+
+}
+
+.customer__textbox .customer__text form #submit__button {
+  display: block;
+  width: 408px;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.customer__textbox .customer__text form #submit__button:hover::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
