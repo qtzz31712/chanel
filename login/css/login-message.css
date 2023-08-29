@@ -20,7 +20,7 @@
 }
 
 .customer__textbox .customer__text form .input__window .log {
-  width: 250px;
+  width: 400px;
   justify-content: space-between;
   display: flex;
 }
@@ -59,10 +59,9 @@
   display: block;
   font-size: 13px;
   cursor: pointer;
-
 }
 
-.customer__textbox .customer__text form #submit__button {
+.customer__textbox .customer__text form #submit__login {
   display: block;
   width: 408px;
   margin: 0 auto;
@@ -76,7 +75,7 @@
   cursor: pointer;
 }
 
-.customer__textbox .customer__text form #submit__button:hover::after {
+.customer__textbox .customer__text form #submit__login:hover::after {
   content: "";
   width: 40px;
   height: 1px;

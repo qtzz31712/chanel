@@ -28,3 +28,30 @@ $("#register__btn").on("click", function () {
     loginMessageEle.addClass("invisible");
   }
 });
+
+$("#submit__login").on("click", function () {
+  const email = $("#input__email").val();
+  const password = $("#input__password").val();
+
+  if (email && password) {
+    const userAccount = JSON.parse(
+      localStorage.getItem("userAccount")
+        ? localStorage.getItem("userAccount")
+        : "[]"
+    );
+    const idFound = userAccount.find((user) => user.email === email);
+    const pwFound = userAccount.find((user) => user.password === password);
+
+    if (idFound && pwFound) {
+      if (idFound.nickName === pwFound.nickName) {
+        const logindUser = idFound;
+
+        sessionStorage.setItem("logindUser", JSON.stringify(logindUser));
+
+        location.href = "../index.html";
+        return alert("로그인에 성공하였습니다!");
+      }
+    }
+  }
+  alert("이메일과 비밀번호가 일치하지 않습니다.");
+});

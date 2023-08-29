@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.customer__section {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 0 60px;
+}
+
+.customer__section h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.customer__section form .text__form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+}
+
+.customer__section form .text__form label {
+  color: rgb(150, 150, 150);
+  width: 130px;
+  font-size: 12px;
+  margin-right: 35px;
+  text-align: right;
+  word-spacing: -2px;
+}
+
+.customer__section form .text__form input {
+  width: 170px;
+  padding: 10px 2px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+}
+
+.customer__section form .text__form .error {
+  display: none;
+  padding: 0 20px;
+  font-size: 12px;
+  color: red;
+}
+
+.customer__section form .text__form input::placeholder {
+  color: rgb(130, 163, 163);
+  font-size: 11px;
+}
+
+.customer__section form #submit__button {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.customer__section form #submit__button:hover::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}

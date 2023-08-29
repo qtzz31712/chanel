@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="../header/css/header.css" />
+    <link rel="stylesheet" href="../footer/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <div class="profile__section">
+      <div class="welcome__content">
+        <h2>님 환영합니다!</h2>
+      </div>
+      <div class="profile__content">
+        <h1>나의 정보</h1>
+        <form action="#">
+          <div class="object__label">프로필</div>
+          <div class="subject__label">
+            <label for="user__gender">성별</label>
+            <input
+              id="user__gender"
+              type="text"
+              autocomplete="off"
+              maxlength="1"
+            />
+          </div>
+          <div class="subject__label">
+            <label for="user__first__name">이름</label>
+            <input
+              id="user__first__name"
+              type="text"
+              autocomplete="off"
+              maxlength="10"
+            />
+          </div>
+          <div class="subject__label">
+            <label for="user__last__name">성</label>
+            <input
+              id="user__last__name"
+              type="text"
+              autocomplete="off"
+              maxlength="10"
+            />
+          </div>
+          <button id="update__profile" class="submit__button" type="button">
+            프로필 업데이트
+          </button>
+        </form>
+        <form action="#">
+          <div class="object__label">연락처</div>
+          <div class="subject__label">
+            <label for="user__email">이메일</label>
+            <input
+              id="user__email"
+              type="email"
+              autocomplete="off"
+              maxlength="35"
+            />
+          </div>
+          <div class="subject__label">
+            <label for="user__tell">전화번호</label>
+            <input
+              id="user__tell"
+              type="text"
+              autocapitalize="off"
+              maxlength="35"
+            />
+          </div>
+          <button id="update__contact" class="submit__button" type="button">
+            연락처 업데이트
+          </button>
+        </form>
+        <form action="#">
+          <div class="object__label">비밀번호</div>
+          <div class="subject__label">
+            <label for="user__password__now">현재 비밀번호</label>
+            <input id="user__password__now" type="password" maxlength="25" />
+          </div>
+          <div class="subject__label">
+            <label for="user__password__new">새 비밀번호</label>
+            <input id="user__password__new" type="password" maxlength="25" />
+          </div>
+          <button id="update__password" class="submit__button" type="button">
+            비밀번호 업데이트
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="../js/common.js"></script>
+  </body>
+</html>

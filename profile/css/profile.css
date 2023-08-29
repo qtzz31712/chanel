@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile__section {
+  height: 1650px;
+}
+
+.profile__section .welcome__content {
+  height: 250px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__section .profile__content {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 400px;
+  height: 700px;
+}
+
+.profile__section .profile__content h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.profile__section .profile__content .object__label {
+  text-align: left;
+  padding: 8px 0;
+  border-bottom: 4px solid black;
+  font-weight: bold;
+  margin-top: 80px;
+}
+
+.profile__section .profile__content .subject__label {
+  margin: 30px 0;
+  text-align: left;
+}
+
+.profile__section .profile__content .subject__label label {
+  font-size: 12px;
+  color: rgb(151, 151, 151);
+}
+
+.profile__section .profile__content .subject__label input {
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  width: 400px;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.profile__section .profile__content form .submit__button {
+  width: 400px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  font-weight: bold;
+}

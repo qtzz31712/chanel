@@ -1,0 +1,17 @@
+.banner {
+  background-image: url(../source/list/mans_banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.banner-box {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: azure;
+  text-align: center;
+}
+.banner-box h5,
+h2 {
+  padding-left: 50px;
+}

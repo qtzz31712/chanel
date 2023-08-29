@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="stylesheet" href="../header/css/header.css" />
+    <link rel="stylesheet" href="../footer/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <header></header>
+    <div class="customer__section">
+      <h1>회원가입</h1>
+      <div class="customer__content">
+        <form action="#">
+          <div class="text__form">
+            <label for="user__email">이메일</label>
+            <input
+              id="user__email"
+              type="email"
+              placeholder="이메일을 입력해주세요"
+              maxlength="35"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="text__form">
+            <label for="user__password">비밀번호</label>
+            <input
+              id="user__password"
+              type="password"
+              placeholder="비밀번호를 입력해주세요"
+              maxlength="25"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="text__form">
+            <label for="user__password__confirm">비밀번호 확인</label>
+            <input
+              id="user__password__confirm"
+              type="password"
+              placeholder="비밀번호를 다시 입력해주세요"
+              maxlength="25"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="text__form">
+            <label for="user__gender">성별</label>
+            <input
+              id="user__gender"
+              type="text"
+              placeholder="성별(남, 여)을 입력해주세요"
+              maxlength="1"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="text__form">
+            <label for="user__first__name">이름</label>
+            <input
+              id="user__first__name"
+              type="text"
+              placeholder="이름을 입력해주세요"
+              maxlength="10"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="text__form">
+            <label for="user__last__name">성</label>
+            <input
+              id="user__last__name"
+              type="text"
+              placeholder="성을 입력해주세요"
+              maxlength="10"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="text__form">
+            <label for="user__tell">전화번호</label>
+            <input
+              id="user__tell"
+              type="text"
+              placeholder="전화번호를 숫자로 입력해주세요"
+              maxlength="11"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <div class="text__form">
+            <label for="user__nickname">닉네임</label>
+            <input
+              id="user__nickname"
+              type="text"
+              placeholder="닉네임을 입력해주세요"
+              maxlength="13"
+              autocomplete="off"
+            />
+            <span class="error"></span>
+          </div>
+          <button id="submit__button" type="button">회원가입 완료</button>
+        </form>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="../js/common.js"></script>
+  </body>
+</html>
