@@ -3,19 +3,30 @@
   height: 450px;
 }
 
-.banner h5 {
-  font-size: 14px;
+.banner-box {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: azure;
+  text-align: center;
+}
+.banner-box h5,
+h2 {
+  padding-left: 50px;
   font-weight: 700;
+}
+
+.banner-box h5 {
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
-.banner h2 {
+.banner-box h2 {
   font-size: 30px;
-  font-weight: 700;
   margin-bottom: 70px;
 }
 
-.banner p {
+.banner-box p {
   padding: auto;
   font-size: 14px;
   text-align: center;
