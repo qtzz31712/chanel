@@ -7,7 +7,7 @@ let priceArr = detail[2].split(",");
 
 let size = `<select name="size">`;
 sizeArr.forEach((value) => {
-  size += `<div><option value="${value}">${value}</option></div>`;
+  size += `<option value="${value}">${value}</option>`;
 });
 size += `</select>`;
 
@@ -58,43 +58,6 @@ $("body").on("keyup", ".qty__input", function () {
   const a = $(".qty__input").val();
   $(this).val(a);
 });
-$("body").on("submit", ".prdInfo", function () {
-  let sizeValue = "";
-  $('input[name="size"]').each(function () {
-    if ($(this).prop("checked")) {
-      sizeValue = $(this).val();
-    }
-    if (!sizeValue) {
-      alert("사이즈를 선택하세요");
-      return false;
-    }
-  });
-  let newItem = {
-    name: detail[0],
-    lineup: detail[1],
-    size: sizeValue,
-    price: price,
-    quantity: quantity,
-  };
-  let itemList = JSON.parse(localStorage, getItem("allItem"));
-  if (itemList == null) {
-    let itemList = [];
-  }
-  itemList.push(newItem);
-  localStorage.setItem("allItem", JSON.stringify(itemList));
-  return false;
-});
-$("body").on("submit", ".prdInfo", function (e) {
-  e.preventDefault();
-  console.log($("select[name=size]").val());
-  let btn_class = $(document.activeElement).attr("class");
-  // console.log(btn_class);
-  if (btn_class == "cart") {
-    location.href = "https://localhost:5500/cart.html";
-  } else {
-    location.href = "https://localhost:5502/buy.html";
-  }
-});
 $("body").on("change", "select[name=size]", function () {
   let a = $("select[name=size] option:selected").index();
   console.log(a);
@@ -102,32 +65,23 @@ $("body").on("change", "select[name=size]", function () {
     priceArr[a].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원"
   );
 });
-sizeValue = $("select[name=size] option:selected").val();
-
-$("body").on("submit", ".cart", function () {
+let sizeValue = $("select[name=size] option:selected").val();
+$("body").on("click", ".cart", function (e) {
+  e.preventDefault();
   let newItem = {
     name: detail[0],
     lineup: detail[1],
-    price: price,
+    price: priceArr[0],
     size: sizeValue,
     quantity: quantity,
     image: detail[4],
   };
+
   let itemList = JSON.parse(localStorage.getItem("allItem")) || [];
-  if (itemList == null) {
-    let itemList = [];
-  }
   itemList.push(newItem);
   localStorage.setItem("allItem", JSON.stringify(itemList));
-  console.log(itemList);
-  return false;
-});
 
-$("body").on("submit", ".prdInfo", function (e) {
-  e.preventDefault();
-  let btn_class = $(document.activeElement).attr("class");
-  let itemList = JSON.parse(localStorage.getItem("allItem")) || [];
-
+  let btn_class = $(this).attr("class");
   if (btn_class == "cart") {
     location.href = "./cart.html";
   } else {
