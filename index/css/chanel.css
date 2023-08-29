@@ -81,12 +81,15 @@ h2 {
   font-weight: 300;
 }
 
-#best .show-case-title li:nth-child(4) {
+#best .show-case-title button {
   font-weight: 600;
   text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-#best .show-case-title li:nth-child(4):hover {
+#best .show-case-title button:hover {
   text-decoration: none;
 }
 

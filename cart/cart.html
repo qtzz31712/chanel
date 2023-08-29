@@ -1,155 +1,159 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chanel</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/chanel.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-        integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script defer type="module" src="./js/showCase.js"></script>
     <script defer src="js/header.js"></script>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <style>
-        .cartBox {
-            padding: 50px 0;
-            background-color: #FFFAFA;
-        }
+      .cartBox {
+        padding: 50px 0;
+        background-color: #fffafa;
+      }
 
-        .cartBox .cartInfo {
-            text-align: center;
+      .cartBox .cartInfo {
+        text-align: center;
 
-            margin: 50px 0;
-        }
+        margin: 50px 0;
+      }
 
-        .cartBox .cartInfo p {
-            margin: 20px 0;
-        }
+      .cartBox .cartInfo p {
+        margin: 20px 0;
+      }
 
-        #detail {
-            border: 1px solid black;
-        }
+      #detail {
+        border: 1px solid black;
+      }
 
-        .remove {
-            border-style: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
+      .remove {
+        border-style: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
 
-        .cartBox .order button {
-            margin-top: 60px;
-            padding: 10px 20px;
-            font-size: 20px;
-            color: #fff;
-            background-color: #19110b;
-            border: 1px solid #19110b;
-            border-radius: 100vmax;
-            cursor: pointer;
-            width: 30%;
-        }
+      .cartBox .order button {
+        margin-top: 60px;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #19110b;
+        border: 1px solid #19110b;
+        border-radius: 100vmax;
+        cursor: pointer;
+        width: 30%;
+      }
 
-        .cartBox .order button:hover {
-            margin-top: 60px;
-            padding: 10px 20px;
-            font-size: 20px;
-            color: #19110b;
-            background-color: #fff;
-            border: 1px solid #19110b;
-            border-radius: 100vmax;
-            cursor: pointer;
-            width: 30%;
-            transition: all 0.5s;
-        }
+      .cartBox .order button:hover {
+        margin-top: 60px;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #19110b;
+        background-color: #fff;
+        border: 1px solid #19110b;
+        border-radius: 100vmax;
+        cursor: pointer;
+        width: 30%;
+        transition: all 0.5s;
+      }
 
-        .cartBox tbody tr {
-            border-bottom: 1px solid black;
-        }
+      .cartBox tbody tr {
+        border-bottom: 1px solid black;
+      }
 
-        .cartBox .tabpg {
-            display: flex;
-        }
+      .cartBox .tabpg {
+        display: flex;
+      }
 
-        #detail {
-            flex: 2;
-        }
+      #detail {
+        flex: 2;
+      }
 
-        #impo {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
+      #impo {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
 
-        #impo li {
+      #impo li {
+        border-bottom: 1px solid #767676;
+        margin: 10px;
+        font-size: 0.7875rem;
+        color: #767676;
+      }
 
-            border-bottom: 1px solid #767676;
-            margin: 10px;
-            font-size: .7875rem;
-            color: #767676;
-        }
+      #impo li:hover {
+        border-bottom: 2px solid black;
+        transition: all 0.5;
+        transform: scale(0.9);
+      }
 
-        #impo li:hover {
-            border-bottom: 2px solid black;
-            transition: all 0.5;
-            transform: scale(0.9);
-        }
+      #impo li div button {
+        font-size: 50px;
+        background-color: #fff;
+        border: 0;
+        cursor: pointer;
+      }
 
-        #impo li div button {
-            font-size: 50px;
-            background-color: #fff;
-            border: 0;
-            cursor: pointer;
+      #impo li div {
+        margin-bottom: 10px;
+      }
 
-        }
+      .tabpg table {
+        text-align: center;
+      }
 
-        #impo li div {
-            margin-bottom: 10px;
+      .btinput {
+        width: 50px;
+      }
 
-        }
+      .order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .tabpg table {
-            text-align: center;
-        }
-
-        .btinput {
-            width: 50px;
-        }
-
-        .order {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .prtotal {
-            height: 40px;
-            font-size: 25px;
-            font-weight: 400;
-        }
+      .prtotal {
+        height: 40px;
+        font-size: 25px;
+        font-weight: 400;
+      }
     </style>
-
 
     <div class="header"></div>
     <section class="cartBox">
-        <div class="cartInfo">
-            <h2>장바구니</h2>
-            <p></p>
-        </div>
-        <!--  <div class="tabpg"> -->
+      <div class="cartInfo">
+        <h2>장바구니</h2>
+        <p></p>
+      </div>
+      <!--  <div class="tabpg"> -->
 
-        <!--           <table id="detail">
+      <!--           <table id="detail">
                 <colgroup class="cols">
                     <col>
                     <col>
@@ -284,13 +288,12 @@
     <div class="footer"></div>
     <script src="./js/common.js"></script>
 
-
     <script>
-        let cartList = JSON.parse(localStorage.getItem("allItem"))
-        function listing() {
-            if (cartList.lenght) {
-                $('.cartInfo p').text("")
-                let trList = `<div class="tabpg"><table id="detail" border="1">
+      let cartList = JSON.parse(localStorage.getItem("allItem"));
+      function listing() {
+        if (cartList.lenght) {
+          $(".cartInfo p").text("");
+          let trList = `<div class="tabpg"><table id="detail" border="1">
                 <colgroup>
                 <col>
                 <col>
@@ -306,23 +309,23 @@
                         <th>금액</th>
                         <th>삭제</th>
                     </tr>
-                </thead>`
-                trList += `<tbody>`
-                cartList.forEach((value, index) => {
-                    trList += `<tr>`
-                    trList += `<td><img src="./source/detail/${value.image}" alt=""> </td>`
-                    trList += `<td>${value.name}</td>`
-                    trList += `<td>
+                </thead>`;
+          trList += `<tbody>`;
+          cartList.forEach((value, index) => {
+            trList += `<tr>`;
+            trList += `<td><img src="./source/detail/${value.image}" alt=""> </td>`;
+            trList += `<td>${value.name}</td>`;
+            trList += `<td>
                      <button type="button" class="miuns">-</button>
                      <input type="text" autocomplete="off" class="btinput">
                       <button type="button" class="plus">+</button>
-                     </td>`
-                    trList += `<td>${value.price[0]}</td>`
-                    trList += `<td><button type="button" class="remove"><i class="fa-solid fa-xmark"></i></button></td>`
-                    trList += `</tr>`
-                })
-                trList += `</tbody>`
-                trList += `<tfoot>
+                     </td>`;
+            trList += `<td>${value.price[0]}</td>`;
+            trList += `<td><button type="button" class="remove"><i class="fa-solid fa-xmark"></i></button></td>`;
+            trList += `</tr>`;
+          });
+          trList += `</tbody>`;
+          trList += `<tfoot>
                     <tr>
                         <td colspan="5" class="prtotal">합계 : 123123</td>
                     </tr>
@@ -374,23 +377,20 @@
                     </a>
                     </li>
             </ul>
-            </div>`
-                trList += `<div class="order"><button type="button">결제하기</button></div>`
-                $('.cartBox .tabpg table').remove()
-                $('.cartBox .tabpg ul').remove()
-                $('.cartBox .tabpg +.order').remove()
-                $('.cartBox').append(trList)
-            } else {
-                $('.cartBox .tabpg table').remove()
-                $('.cartBox .tabpg ul').remove()
-                $('.cartBox .tabpg +.order').remove()
-                $('.cartInfo p').text("장바구니가 비어 있습니다.")
-            }
+            </div>`;
+          trList += `<div class="order"><button type="button">결제하기</button></div>`;
+          $(".cartBox .tabpg table").remove();
+          $(".cartBox .tabpg ul").remove();
+          $(".cartBox .tabpg +.order").remove();
+          $(".cartBox").append(trList);
+        } else {
+          $(".cartBox .tabpg table").remove();
+          $(".cartBox .tabpg ul").remove();
+          $(".cartBox .tabpg +.order").remove();
+          $(".cartInfo p").text("장바구니가 비어 있습니다.");
         }
-        listing()
-
+      }
+      listing();
     </script>
-
-</body>
-
+  </body>
 </html>
