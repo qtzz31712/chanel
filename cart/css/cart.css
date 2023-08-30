@@ -12,9 +12,14 @@
   margin: 20px 0;
 }
 
-#detail {
-  border: 1px solid black;
+.cartBox .cartInfo h2 {
+  font-size: 30px;
+  font-weight: 700;
 }
+
+/* #detail {
+  border: 1px solid black;
+} */
 
 .remove {
   border-style: none;
@@ -49,11 +54,12 @@
 }
 
 .cartBox tbody tr {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #1d1d1d;
 }
 
 .cartBox .tabpg {
   display: flex;
+  align-items: flex-start;
 }
 
 #detail {
@@ -95,9 +101,14 @@
 }
 
 .btinput {
-  border-radius: 15px;
+  border-radius: 10px;
   width: 50px;
   text-align: center;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  vertical-align: center;
+  line-height: 20px;
 }
 
 .order {
@@ -119,18 +130,22 @@
 
 .thlist th {
   font-weight: 700;
+  padding-bottom: 30px;
 }
 
 .valname {
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 600;
   color: darkslategray;
+  white-space: nowrap;
+  margin-right: 20px;
 }
 
 .vallineup {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   color: #767676;
+  margin-right: 20px;
 }
 
 .total {
@@ -143,11 +158,21 @@
   border: 0;
   background-color: #fff;
   cursor: pointer;
+  height: 30px;
+  line-height: 30px;
 }
 
 .bt__minus {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 500;
   border: 0;
   background-color: #fff;
   cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+}
+
+.btinput {
+  line-height: 30px;
+  height: 30px;
 }

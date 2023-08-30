@@ -178,9 +178,9 @@ $("body").on("click", ".order button", function () {
   let myid = sessionStorage.getItem("userid");
   if (!myid) {
     alert("로그인 후 구매할 수 있습니다.");
-    location.href = "./login.html";
+    location.href = "../login/login.html";
   } else {
-    location.href = "./buy.html";
+    location.href = "#none";
     localStorage.clear();
   }
 });

@@ -27,6 +27,7 @@
   text-align: left;
   border-bottom: 3px solid #1d1d1d;
   width: 80%;
+  white-space: nowrap;
 }
 .prdInfo .lineup {
   font-size: 13px;
@@ -48,13 +49,14 @@
   margin-top: 20px;
   margin-bottom: 0;
   padding: 0;
+  white-space: nowrap;
 }
 .prdInfo .quantity .qty__form {
   margin: auto 0;
   box-sizing: border-box;
 }
 .prdInfo .quantity .qty__form button {
-  width: 50px;
+  width: 30px;
   height: 30px;
   border: none;
   font-size: 16px;
@@ -68,7 +70,7 @@
 }
 
 .prdInfo .quantity .qty__form .qty__input {
-  width: 50px;
+  width: 30px;
   height: 30px;
   text-align: center;
   font-size: 16px;
@@ -78,7 +80,7 @@
   width: 80%;
   height: 50px;
   text-overflow: clip;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 0em;
   font-weight: 600;
   text-align: center;
@@ -87,4 +89,5 @@
   cursor: pointer;
   margin-top: 0;
   border: none;
+  white-space: nowrap;
 }

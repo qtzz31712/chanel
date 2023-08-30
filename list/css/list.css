@@ -73,6 +73,14 @@ h2 {
 .list ul li > div > p > a:hover {
   border-bottom: 3px solid #333;
 }
+.list ul .cart {
+  border: none;
+  background: none;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
 
 .undimg img {
   padding-top: 50px;
