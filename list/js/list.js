@@ -16,7 +16,7 @@ function usedata(pname) {
     ulli += `</li>`;
   });
   ulli += `</ul>`;
-  ulli += `<div class="undimg"><img src="./source/index/onemineur_800x1300.jpg" alt=""></div>`;
+  ulli += `<div class="undimg"><img src="../source/index/onemineur_800x1300.jpg" alt=""></div>`;
 
   $(".list ul").remove();
   $(".list").append(ulli);

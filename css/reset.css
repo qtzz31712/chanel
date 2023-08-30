@@ -192,3 +192,9 @@ img {
   line-height: 0px;
   font-size: 0px;
 }
+
+.row {
+  max-width: 1200px;
+  text-align: center;
+  margin: 20px auto;
+}

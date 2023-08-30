@@ -1,0 +1,85 @@
+@media screen and (max-width: 768px) {
+  #headbanner {
+    max-width: 100%;
+  }
+  .banner {
+    height: 250px;
+    background-size: 100% 100% cover;
+  }
+
+  .banner-box {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: azure;
+  }
+  .banner-box h5,
+  h2 {
+    font-weight: 700;
+    display: block;
+  }
+
+  .banner-box h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .banner-box h2 {
+    font-size: 30px;
+    margin-bottom: 70px;
+  }
+
+  .banner-box p {
+    padding: auto;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2em;
+    text-align: center;
+    display: none;
+  }
+
+  .list {
+    text-align: center;
+  }
+
+  .list > ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .list > ul > li {
+    width: 45%;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .list li img {
+    border-bottom: 3px solid #fff;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+  }
+
+  .list li img:hover {
+    border-bottom: 3px solid #000;
+    margin-bottom: 10px;
+  }
+
+  .list ul li > div p {
+    line-height: 2.3;
+  }
+
+  .list ul li > div > p > a {
+    transition: all 0.3s;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  .list ul li > div > p > a:hover {
+    border-bottom: 3px solid #333;
+  }
+
+  .undimg img {
+    padding-top: 50px;
+  }
+}
