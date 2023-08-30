@@ -83,7 +83,7 @@ $("body").on("click", ".cart", function (e) {
 
   let btn_class = $(this).attr("class");
   if (btn_class == "cart") {
-    location.href = "./cart.html";
+    location.href = "../cart/cart.html";
   } else {
     location.href = "https://localhost:5502/buy.html";
   }

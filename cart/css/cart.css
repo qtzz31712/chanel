@@ -1,0 +1,153 @@
+.cartBox {
+  padding: 50px 0;
+}
+
+.cartBox .cartInfo {
+  text-align: center;
+
+  margin: 50px 0;
+}
+
+.cartBox .cartInfo p {
+  margin: 20px 0;
+}
+
+#detail {
+  border: 1px solid black;
+}
+
+.remove {
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cartBox .order button {
+  margin-top: 60px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #19110b;
+  border: 1px solid #19110b;
+  border-radius: 100vmax;
+  cursor: pointer;
+  width: 30%;
+}
+
+.cartBox .order button:hover {
+  margin-top: 60px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #19110b;
+  background-color: #fff;
+  border: 1px solid #19110b;
+  border-radius: 100vmax;
+  cursor: pointer;
+  width: 30%;
+  transition: all 0.5s;
+}
+
+.cartBox tbody tr {
+  border-bottom: 1px solid black;
+}
+
+.cartBox .tabpg {
+  display: flex;
+}
+
+#detail {
+  flex: 2;
+}
+
+#impo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#impo li {
+  border-bottom: 1px solid #767676;
+  margin: 10px;
+  font-size: 0.7875rem;
+  color: #767676;
+}
+
+#impo li:hover {
+  border-bottom: 2px solid black;
+  transition: all 0.5;
+  transform: scale(0.9);
+}
+
+#impo li div button {
+  font-size: 50px;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+#impo li div {
+  margin-bottom: 10px;
+}
+
+.tabpg table {
+  text-align: center;
+}
+
+.btinput {
+  border-radius: 15px;
+  width: 50px;
+  text-align: center;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prtotal {
+  height: 60px;
+  font-size: 25px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.thlist {
+  font-size: 20px;
+}
+
+.thlist th {
+  font-weight: 700;
+}
+
+.valname {
+  font-size: 23px;
+  font-weight: 600;
+  color: darkslategray;
+}
+
+.vallineup {
+  font-size: 14px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bt__plus {
+  font-size: 20px;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.bt__minus {
+  font-size: 30px;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
