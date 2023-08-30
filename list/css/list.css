@@ -64,24 +64,18 @@ h2 {
   line-height: 2.3;
 }
 
-.list ul li > div > p > a {
+.list ul .cart {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 10px;
   transition: all 0.3s;
   border-bottom: 3px solid #ddd;
   padding-bottom: 5px;
 }
-
-.list ul li > div > p > a:hover {
+.list ul .cart:hover {
   border-bottom: 3px solid #333;
 }
-.list ul .cart {
-  border: none;
-  background: none;
-  border-bottom: 3px solid #ddd;
-  padding-bottom: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
 .undimg img {
   padding-top: 50px;
 }

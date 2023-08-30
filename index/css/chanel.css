@@ -227,6 +227,7 @@ h2 {
 #category > ul > li {
   width: 32%;
   height: 450px;
+  font-weight: 600;
 }
 
 #category > ul > li:hover .list ul li:nth-child(2) {
