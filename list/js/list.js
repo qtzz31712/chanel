@@ -38,11 +38,11 @@ function usedata(pname) {
 
     let btn_class = $(this).attr("class");
     if (btn_class == "cart") {
-      var addcart = confirm("장바구니로 이동하시겠습니까?");
+      var addcart = confirm("장바구니로 이동 하시겠습니까?");
       if (addcart) {
         location.href = "../cart/cart.html";
       } else {
-        location.href = "#none";
+        return false;
       }
     }
   });
