@@ -30,7 +30,7 @@
   }
 
   .invisible {
-    visibility: hidden;
+    display: none;
   }
 
   header {

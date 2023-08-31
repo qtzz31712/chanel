@@ -37,7 +37,6 @@ $("body").on("click", ".cart_btn", function (e) {
     image: found.img,
   };
   console.log(newItem);
-  debugger;
   let itemList = JSON.parse(localStorage.getItem("allItem")) || [];
   itemList.push(newItem);
   localStorage.setItem("allItem", JSON.stringify(itemList));

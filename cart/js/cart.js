@@ -168,12 +168,13 @@ $("body").on("click", "tbody .remove", function () {
   listing();
 });
 $("body").on("click", ".order button", function () {
-  let myid = sessionStorage.getItem("userid");
-  if (!myid) {
-    alert("로그인 후 구매할 수 있습니다.");
-    location.href = "../login/login.html";
+  let myid = sessionStorage.getItem("logindUser");
+  if (myid) {
+    alert("결제가 완료 되었습니다.");
+    localStorage.removeItem("allItem");
+    location.reload();
   } else {
-    location.href = "#none";
-    localStorage.clear();
+    alert("로그인이 필요한 기능입니다.");
+    location.href = "../login/login.html";
   }
 });

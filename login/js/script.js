@@ -34,19 +34,12 @@ $("#submit__login").on("click", function () {
   const password = $("#input__password").val();
 
   if (email && password) {
-    const userAccount = JSON.parse(
-      localStorage.getItem("userAccount")
-        ? localStorage.getItem("userAccount")
-        : "[]"
-    );
-    const idFound = userAccount.find((user) => user.email === email);
-    const pwFound = userAccount.find((user) => user.password === password);
+    const userAccount = JSON.parse(localStorage.getItem("userAccount")) || [];
+    const emailFound = userAccount.find((user) => user.email === email);
 
-    if (idFound && pwFound) {
-      if (idFound.nickName === pwFound.nickName) {
-        const logindUser = idFound;
-
-        sessionStorage.setItem("logindUser", JSON.stringify(logindUser));
+    if (emailFound) {
+      if (emailFound.password === password) {
+        sessionStorage.setItem("logindUser", JSON.stringify(emailFound));
 
         location.href = "../index.html";
         return alert("로그인에 성공하였습니다!");
