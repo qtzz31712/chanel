@@ -1,7 +1,6 @@
 <html>
   <head>
     <title>헤더</title>
-    <link rel="stylesheet" href="./css/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,28 +14,33 @@
       <div class="title">
         <h1 class="logo"><a href="/index.html">CHANEL</a></h1>
         <div class="icons">
+          <span id="list" title="리스트">
+            <i class="fa-solid fa-bars"></i>
+          </span>
           <div id="my-form" class="invisible">
             <form action="#">
               <input type="text" placeholder="원하는 상품을 검색하세요" />
               <input type="submit" value="search" />
             </form>
           </div>
-          <span id="search" title="검색"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></span>
-          <a href="../login/login.html">
-            <span id="my-page" title="나의 페이지"
-              ><i class="fa-regular fa-user"></i></span
-          ></a>
-          <span id="wish" title="위시리스트"
-            ><i class="fa-regular fa-star"></i
-          ></span>
-          <span id="shopcart" title="장바구니"
-            ><i class="fa-solid fa-bag-shopping"></i
-          ></span>
-          <span id="logout" title="로그아웃" style="display: none">
-            <i class="fa-solid fa-right-from-bracket"></i>
-          </span>
+          <div class="main__icons">
+            <span id="search" title="검색"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <a href="../login/login.html">
+              <span id="my-page" title="나의 페이지"
+                ><i class="fa-regular fa-user"></i></span
+            ></a>
+            <span id="wish" title="위시리스트"
+              ><i class="fa-regular fa-star"></i
+            ></span>
+            <span id="shopcart" title="장바구니"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></span>
+            <span id="logout" title="로그아웃">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </span>
+          </div>
         </div>
       </div>
       <div class="nav">
@@ -96,12 +100,109 @@
           <li>
             <a href="#"> 바스 & 바디</a>
             <ul class="depth2">
-              <li><a href="../list/list_woman.html">여성 향수</a></li>
-              <li><a href="../list/list_man.html">남성 향수</a></li>
+              <li><a href="../list_woman.html">여성 향수</a></li>
+              <li><a href="../list_man.html">남성 향수</a></li>
               <li><a href="#">모든 제품 보기</a></li>
             </ul>
           </li>
-          <li><a href="../board/board.html">공지사항/게시판</a></li>
+          <li><a href="../board/board.html">게시판</a></li>
+        </ul>
+      </div>
+      <div class="nav__rwd invisible">
+        <ul>
+          <li class="main__title">
+            <a href="#">하이라이트</a>
+            <ul>
+              <li class="sub__title">
+                <a href="../list/list_man.html">스페셜 에디션</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html">신제품</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html">멘즈 셀렉션</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main__title">
+            <a href="#">향수 컬렉션</a>
+            <ul>
+              <li class="sub__title">
+                <a href="../list/list_man.html">레 젝스클루시프 드 샤넬</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html">레 조 드 샤넬</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html"
+                  >샤넬의 특별한 이야기에서 탄생한 향수</a
+                >
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html">샤넬 향수</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main__title">
+            <a href="#">부티크 서비스</a>
+            <ul>
+              <li class="sub__title">
+                <a href="../list/list_man.html">온라인 스토어 서비스</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html">부티크 찾기</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main__title">
+            <a href="../list/list_woman.html">여성 향수 </a>
+            <ul>
+              <li class="sub__title">
+                <a href="../list/list_woman.html">N°5</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_woman.html">코코 마드모아젤</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_woman.html">가브리엘 샤넬</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_woman.html">샹스</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main__title">
+            <a href="#">남성 향수 </a>
+            <ul>
+              <li class="sub__title">
+                <a href="../list/list_man.html">블루 드 샤넬</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html">알뤼르 옴므 스포츠</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html"
+                  >알뤼르 옴므 스포츠 오 엑스트렘므</a
+                >
+              </li>
+              <li class="sub__title">
+                <a href="../list/list_man.html">알뤼르 옴므</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main__title">
+            <a href="#"> 바스 & 바디</a>
+            <ul>
+              <li class="sub__title">
+                <a href="../list_woman.html">여성 향수</a>
+              </li>
+              <li class="sub__title">
+                <a href="../list_man.html">남성 향수</a>
+              </li>
+              <li class="sub__title"><a href="#">모든 제품 보기</a></li>
+            </ul>
+          </li>
+          <li class="main__title"><a href="../board/board.html">게시판</a></li>
         </ul>
       </div>
     </div>

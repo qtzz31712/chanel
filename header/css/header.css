@@ -20,7 +20,7 @@ a {
 header {
   top: 0;
   border-top: 8px solid black;
-  height: 145px;
+  height: 139px;
   position: sticky;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(231, 231, 231);
@@ -46,8 +46,10 @@ header {
 }
 
 .header .title .icons #my-form {
+  position: absolute;
+  top: 100px;
+  right: 20px;
   border: 1px solid rgb(235, 235, 235);
-  border-radius: 25px;
 }
 
 .header .title .icons form {
@@ -61,12 +63,10 @@ header {
 }
 
 .header .title .icons form input:first-child {
-  border-radius: 25px 25px;
   color: rgb(88, 88, 88);
 }
 
 .header .title .icons form input:last-child {
-  border-radius: 0 25px 25px 0;
   cursor: pointer;
 }
 
@@ -81,6 +81,26 @@ header {
   cursor: pointer;
 }
 
+.header .title .icons .main__icons {
+  position: fixed;
+  top: 39px;
+  right: 75px;
+  font-size: 17px;
+}
+
+.header .title .icons .main__icons span {
+  margin-right: 10px;
+}
+
+.header .title .icons .main__icons #logout {
+  display: none;
+  margin-left: 20px;
+}
+
+.header .title .icons #list {
+  visibility: hidden;
+}
+
 .header .nav .depth1 {
   display: flex;
   justify-content: center;
@@ -93,7 +113,7 @@ header {
 }
 
 .header .nav .depth1 > li {
-  padding: 26px 20px 26px;
+  padding: 20px;
   position: relative;
   text-align: center;
 }
@@ -111,7 +131,7 @@ header {
 
 .header .nav .depth1 li .depth2 {
   position: absolute;
-  top: 84%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 13px;

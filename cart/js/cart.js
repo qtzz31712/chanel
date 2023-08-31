@@ -111,15 +111,8 @@ $("body").on("click", ".bt__plus", function () {
   let quantity = parseInt($(this).prev().val());
   let myprice = parseInt($(this).parent().prev().find(".price").text());
   console.log(quantity);
-  let total = 0;
-  if (quantity) {
-    $(this).prev().val(++quantity);
-    totalformat = quantity * myprice;
-  } else {
-    quantity = 1;
-    $(this).prev().val(++quantity);
-    totalformat = quantity * myprice;
-  }
+  $(this).prev().val(++quantity);
+  let totalformat = quantity * myprice;
   $(this)
     .parent()
     .next()
@@ -127,28 +120,21 @@ $("body").on("click", ".bt__plus", function () {
     .text(totalformat.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
   mytotal();
 });
-
 $("body").on("click", ".bt__minus", function () {
   let quantity = parseInt($(this).next().val());
   if (quantity > 1) {
     let myprice = parseInt($(this).parent().prev().find(".price").text());
     console.log(quantity);
     $(this).next().val(--quantity);
-    totalformat = quantity * myprice;
-  } else {
-    quantity = 1;
-    $(this).next().val(quantity);
-    totalformat = quantity * myprice;
+    let totalformat = quantity * myprice;
+    $(this)
+      .parent()
+      .next()
+      .find(".total")
+      .text(totalformat.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    mytotal();
   }
-  $(this)
-    .parent()
-    .next()
-    .find(".total")
-    .text(totalformat.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-
-  mytotal();
 });
-
 $("body").on("keyup", ".btinput", function () {
   let quantity = $(this).val();
   let myprice = parseInt($(this).parent().prev().find(".price").text());
@@ -161,11 +147,9 @@ $("body").on("keyup", ".btinput", function () {
       .next()
       .find(".total")
       .text(totalformat.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-
     mytotal();
   }
 });
-
 function mytotal() {
   let total = 0;
   $(".tabpg tbody .total").each(function (index, value) {
@@ -176,7 +160,6 @@ function mytotal() {
   let endtotal = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원";
   $(".prtotal span").text(endtotal);
 }
-
 $("body").on("click", "tbody .remove", function () {
   let trnum = $(this).parents("tr").index();
   // console.log(trnum)
@@ -184,14 +167,13 @@ $("body").on("click", "tbody .remove", function () {
   localStorage.setItem("allItem", JSON.stringify(cartList));
   listing();
 });
-
 $("body").on("click", ".order button", function () {
   let myid = sessionStorage.getItem("userid");
   if (!myid) {
     alert("로그인 후 구매할 수 있습니다.");
-    location.href = "./login.html";
+    location.href = "../login/login.html";
   } else {
-    location.href = "./buy.html";
+    location.href = "#none";
     localStorage.clear();
   }
 });

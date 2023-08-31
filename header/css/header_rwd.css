@@ -1,0 +1,218 @@
+@media screen and (max-width: 1350px) {
+  .header .title .icons #my-form {
+    position: absolute;
+    top: 145px;
+    right: 20px;
+    border: 1px solid rgb(235, 235, 235);
+  }
+
+  .header .title .icons #my-form input {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  header {
+    top: 0;
+    border-top: 8px solid rgb(0, 0, 0);
+    height: 88px;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    z-index: 9999;
+  }
+
+  .header .title {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .header .title .logo {
+    font-size: 50px;
+    letter-spacing: 7px;
+    font-weight: bolder;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header .title .icons #my-form {
+    position: absolute;
+    top: 90px;
+  }
+
+  .header .title .icons form {
+    display: flex;
+  }
+
+  .header .title .icons form input {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+  }
+
+  .header .title .icons form input:first-child {
+    color: rgb(88, 88, 88);
+  }
+
+  .header .title .icons form input:last-child {
+    cursor: pointer;
+  }
+
+  .header .title .icons {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 40px;
+    /* position: relative; */
+  }
+
+  .header .title .icons span {
+    cursor: pointer;
+  }
+
+  .header .title .icons .main__icons {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 17px;
+  }
+
+  .header .title .icons .main__icons span {
+    margin-right: 10px;
+  }
+
+  .header .title .icons #list {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    visibility: visible;
+  }
+
+  .header .title .icons #list i {
+    font-size: 25px;
+  }
+
+  .header .nav .depth1 {
+    display: none;
+    justify-content: center;
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  .header .nav .depth1:nth-child(2) {
+    margin: 0 20px;
+  }
+
+  .header .nav .depth1 > li {
+    padding: 26px 20px 26px;
+    position: relative;
+    text-align: center;
+  }
+
+  .header .nav .depth1 > li:hover > a {
+    padding-bottom: 10px;
+    font-weight: bolder;
+    border-bottom: 4px solid rgb(0, 0, 0);
+  }
+
+  .header .nav .depth1 > li:hover .depth2 {
+    display: block;
+    z-index: 99;
+  }
+
+  .header .nav .depth1 li .depth2 {
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    padding: 5px 10px;
+    background: #ffffff;
+    color: #444;
+    width: 150px;
+    text-align: center;
+    display: none;
+    z-index: 99;
+  }
+
+  .header .nav .depth1 li .depth2 a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .header .nav .depth1 li .depth2 a:hover {
+    color: #000;
+    font-weight: bolder;
+  }
+
+  .header .nav .depth1 li .depth2 li:nth-child(1) {
+    border: none;
+  }
+
+  .header .nav__rwd {
+    width: 100%;
+    /* height: 50%; */
+    background-color: rgba(255, 255, 255, 0.829);
+    padding-left: 30px;
+    height: 70%;
+  }
+
+  .header .nav__rwd > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header .nav__rwd .main__title {
+    width: 15%;
+    line-height: 3em;
+    text-align: center;
+    font-weight: bolder;
+    white-space: nowrap;
+  }
+
+  .header .nav__rwd .sub__title {
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-size: 12px;
+    padding: 0 10px;
+    white-space: wrap;
+  }
+
+  .header .nav__rwd .sub__title:hover {
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header .nav__rwd {
+    display: none;
+  }
+}
